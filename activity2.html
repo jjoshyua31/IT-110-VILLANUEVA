@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Practical Application Activity</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 1rem; line-height: 1.6; }
+    img, video { max-width: 100%; }
+    figure { margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">HTML Practical Application Activity</h1>
+  <p>Anime Recommendations</p>
+  <nav>
+    <a href="#images">Images</a> |
+    <a href="#hyperlinks">Hyperlinks</a> |
+    <a href="#multimedia">Multimedia</a> |
+    <a href="#useful-tags">Useful Tags</a> |
+    <a href="#dom">HTML DOM</a>
+  </nav>
+
+
+  <!-- 1. IMAGES -->
+<h2 id="images">Images</h2>
+<figure id="op-figure">
+  <img src="op.jpg" alt="Artwork of One Piece, my number 1 favorite anime" width="400">
+  <figcaption>Figure 1: One Piece, my number 1 favorite anime.</figcaption>
+</figure>
+<img src="bc.jpg" alt="Artwork of Black Clover, my number 2 favorite anime" width="400">  
+<figcaption>Figure 2: Black Clover, my comfort anime.</figcaption>
+<img src="sl.jpg" alt="Artwork of Solo Leveling, my number 3 favorite anime" height="500">  
+<figcaption>Figure 3: Solo leveling, my favorite webtoon.</figcaption>
+
+
+
+
+  <h2 id="hyperlinks">Hyperlinks</h2>
+<ul id="link-list">
+  <li><a href="class-schedule.html">Internal link: see my class schedule</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/One_Piece" target="_blank" rel="noopener noreferrer">External link: read about One Piece on Wikipedia</a></li>
+  <li><a href="mailto:joshua.villanueva@carsu.edu.ph?subject=Anime%20talk">Email link: message me about anime</a></li>
+  <li><a href="#op-figure">Anchor link: jump to my number 1 anime, One Piece</a></li>
+</ul>
+
+
+<h2 id="multimedia">Multimedia</h2>
+<h3>Audio: my favorite anime song</h3>
+<audio controls>
+  <source src="binks.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+<h3>Video: One Piece in 10 seconds</h3>
+<video controls width="320">
+  <source src="op10.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+
+
+<h2 id="useful-tags">Useful Tags</h2>
+<!-- I chose <blockquote> because it marks a quotation from a character I admire. -->
+<blockquote>
+  I'm gonna be King of the Pirates! - Monkey D. Luffy, One Piece
+</blockquote>
+<!-- I chose <abbr> because it explains the shortened names of my anime when hovered. -->
+<p><abbr title="One Piece">OP</abbr>, <abbr title="Black Clover">BC</abbr>, and <abbr title="Solo Leveling">SL</abbr> are the image filenames for my top 3.</p>
+<!-- I chose <mark> because it highlights my number 1 anime so readers notice it. -->
+<p>My all-time favorite anime is <mark>One Piece</mark>.</p>
+<!-- I chose <ol> and <li> because my top 3 is a ranking, so the order matters. -->
+<ol id="top-anime">
+  <li>One Piece</li>
+  <li>Black Clover</li>
+  <li>Solo Leveling</li>
+</ol>
+<!-- I chose <code> because it shows the image filename in a monospace font. -->
+<p>The number 1 image is saved as <code>op.jpg</code>.</p>
+<!-- I chose the &copy; character entity because it displays a symbol not found on the keyboard. -->
+<p>&copy; 2026 Joshua B. Villanueva</p>
+
+
+<h2 id="dom">HTML DOM</h2>
+<p>The browser turns this page into a tree of elements. See my DevTools screenshot below.</p>
+<img id="dom-screenshot" src="dom.jpg" alt="DevTools Elements panel showing the DOM tree of this page" width="600">
+
+
+<!--
+DOM parent-child explanation:
+The <ol> element with id="top-anime" is the parent of its three <li> elements, which are its children and siblings of one another.
+The <figure> with id="op-figure" is the parent of both the <img> that shows One Piece and the <figcaption> that describes it.
+The <ul> with id="link-list" is the parent of the six <li> elements, and each <li> is the parent of one <a> link.
+All of these elements descend from <body>, which is a child of the root <html> element.
+-->
+</body>
+</html>
+
